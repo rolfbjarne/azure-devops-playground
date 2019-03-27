@@ -12,9 +12,9 @@ jobs:
   strategy:
     matrix:
       a:
-        TEST_CONFIGURATION=Debug
+        TEST_CONFIGURATION: Debug
       b:
-        TEST_CONFIGURATION=Release
+        TEST_CONFIGURATION: Release
 
   pool:
     vmImage: 'macOS-10.13'
