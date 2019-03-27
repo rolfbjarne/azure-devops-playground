@@ -9,15 +9,15 @@ trigger:
 jobs:
 - job: macOS
   displayName: Matrix testing
-
-  pool:
-    vmImage: 'macOS-10.13'
+  strategy:
     matrix:
       a:
         TEST_CONFIGURATION=Debug
       b:
         TEST_CONFIGURATION=Release
 
+  pool:
+    vmImage: 'macOS-10.13'
 
   steps:
   - bash: |
